@@ -361,7 +361,7 @@ Executive Financial Dashboard
 
 A PDF version of the project documentation is available here:
 
-"View / Download Project PDF" (PDF/AR_AP_Analytics_Project.pdf)
+"View / Download Project PDF" (PDF/ Account_Receivable_Payable_Analytic_Dashboard.pdf)
 
 The PDF contains the project overview, data structure, data preparation, data model, DAX measures, dashboard analysis, KPIs, and key insights.
 
