@@ -134,7 +134,7 @@ Charts
 - Supplier Outstanding
 - Collection vs Payment Performance — Customer Collection and Supplier Payment
 
-![3.Customer Risk Analysis](3.Customer_Risk_Analysis.jpg)
+![3.Executive Dashboard](3.Executive_Dashboard.jpg)
 
 4. Customer Risk Analysis
 
@@ -154,7 +154,7 @@ Charts
 - Customer Risk by Outstanding
 - Customer Risk by Customer
 
-![4.Supplier Risk Analysis](4.Supplier_Risk_Analysis.jpg)
+![4.Customer Risk Analysis](4.Customer_Risk_Analysis.jpg)
 
 5. Supplier Risk Analysis
 
@@ -174,6 +174,8 @@ Charts
 - Supplier Outstanding Analysis
 - Top Suppliers Outstanding
 - Supplier Payment Risk / Analysis
+
+![5.Supplier Risk Analysis](5.Supplier_Risk_Analysis.jpg)
 
 📄 Project Documentation
 
