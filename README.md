@@ -1,361 +1,179 @@
-📊 Accounts Receivable & Payable Analytics Dashboard | Power BI
+📊 Accounts Receivable & Accounts Payable Analytics Dashboard | Power BI
 
 📌 Project Overview
 
-This project is an interactive Accounts Receivable & Payable Analytics Dashboard developed to transform accounting transaction data into clear, actionable financial insights.
+An end-to-end Accounts Receivable (AR) and Accounts Payable (AP) Analytics Project designed to transform accounting transaction data into actionable financial insights and management decision support.
 
-The dashboard combines accounting knowledge, data analysis, data transformation, and business intelligence to help management monitor customer receivables, supplier payables, collections, payments, aging, outstanding balances, and customer and supplier risk.
+The project combines accounting knowledge with Excel, Power Query, Python, Pandas, Power BI, DAX, risk analysis, aging analysis, customer and supplier exposure analysis, reconciliation, and AI-ready management insights.
 
-The project was developed using Microsoft Excel, Power Query, Power BI, and DAX.
-
-
-🎯 Project Objectives
-
-The main objectives of the project are to:
-
-- Analyze outstanding customer receivables.
-- Analyze outstanding supplier payables.
-- Monitor customer collections and supplier payments.
-- Calculate Collection Rate and Payment Rate.
-- Identify overdue customer invoices using Aging Analysis.
-- Classify customers and suppliers according to risk levels.
-- Analyze sales and purchase trends.
-- Provide management with interactive financial KPIs and insights.
-- Combine accounting principles with data analysis and Business Intelligence.
+The solution analyzes receivables and payables to help management monitor outstanding balances, overdue exposure, collection and payment performance, customer and supplier concentration, risk levels, supplier overpayments, and liquidity-related risks.
 
 
-💼 Business Problem
+🎯 Business Objectives
 
-Companies need accurate and timely information about:
+The project was developed to:
 
-- How much money is still owed by customers.
-- How much the company owes to suppliers.
-- Which customer invoices are overdue.
-- How effectively customer collections are being managed.
-- How effectively supplier payments are being managed.
-- Which customers or suppliers may represent higher financial risk.
-
-Traditional accounting reports can provide the numbers, but interactive dashboards make it easier to monitor, analyze, compare, and identify areas requiring management attention.
-
-This project addresses these requirements through an interactive Power BI solution.
-
-
-🗂️ Data Structure
-
-The project uses structured accounting and transaction data, including:
-
-Customers Master Data
-
-Contains customer information used for customer analysis and risk classification.
-
-Suppliers Master Data
-
-Contains supplier information used for supplier analysis and risk classification.
-
-Sales Invoices
-
-Contains customer invoice transactions, including invoice numbers, invoice dates, due dates, and invoice amounts.
-
-Purchase Invoices
-
-Contains supplier purchase transactions, including invoice numbers, invoice dates, due dates, and invoice amounts.
-
-Customer Receipts
-
-Contains customer collection transactions and amounts received against invoices.
-
-Supplier Payments
-
-Contains supplier payment transactions and amounts paid against supplier invoices.
-
-Chart of Accounts
-
-Contains accounting account codes, account names, and account classifications.
-
-Calendar Table
-
-Used for date analysis, monthly trends, and time-based reporting in Power BI.
+- Analyze customer receivables and supplier payables.
+- Identify outstanding and overdue balances.
+- Perform AR and AP aging analysis.
+- Measure collection and payment performance.
+- Identify high-risk customers and suppliers.
+- Analyze customer and supplier exposure concentration.
+- Detect supplier overpayments.
+- Support management collection and payment decisions.
+- Provide executive-level financial KPIs.
+- Validate accounting consistency through reconciliation checks.
+- Convert accounting data into management-oriented decision support.
 
 
-🧹 Data Preparation
+📈 Key Features
 
-The accounting data was prepared and transformed before being used for dashboard analysis.
+Accounts Receivable Analysis
 
-The data preparation process included:
+- Total sales invoices.
+- Customer collections.
+- Outstanding receivables.
+- Collection rate analysis.
+- Receivables aging analysis.
+- Top customer outstanding exposure.
+- Collection trend analysis.
+- Customer risk classification.
+- Customer management decision support.
 
-- Reviewing the accounting data structure.
-- Cleaning and organizing transaction data.
-- Checking data consistency.
-- Standardizing data types.
-- Preparing dates for time-based analysis.
-- Preparing customer and supplier master data.
-- Preparing invoice and payment data for analysis.
+Accounts Payable Analysis
 
-
-🔄 Power Query
-
-Power Query was used to prepare and transform the accounting data before loading it into the Power BI data model.
-
-Key activities included:
-
-- Data cleaning.
-- Data transformation.
-- Data type management.
-- Query preparation.
-- Structuring accounting tables for analysis.
-- Preparing data for relationships and DAX calculations.
-
-
-🧩 Data Model
-
-A structured Power BI data model was created to connect accounting transactions with the relevant master and calendar data.
-
-The model supports analysis of:
-
-- Customers.
-- Suppliers.
-- Sales invoices.
-- Purchase invoices.
-- Customer receipts.
+- Total purchase invoices.
 - Supplier payments.
-- Dates.
-- Accounting classifications.
-
-The model was designed to support reliable filtering, aggregation, and financial analysis.
-
-
-🧮 DAX & Financial Measures
-
-DAX was used to create financial and analytical measures for the dashboards.
-
-Key measures include:
-
-- Outstanding Receivables.
-- Outstanding Payables.
-- Customer Collections.
-- Supplier Payments.
-- Collection Rate %.
-- Payment Rate %.
-- Aging Amount.
-- Customer Outstanding.
-- Supplier Outstanding.
-- High Risk Customers.
-- Medium Risk Customers.
-- Low Risk Customers.
-- High Risk Suppliers.
-- Medium Risk Suppliers.
-- Low Risk Suppliers.
-- Total Suppliers.
-
-These measures support interactive KPI cards and analytical visuals.
-
-
-⏳ Aging Analysis
-
-The project includes an Outstanding Receivables Aging Analysis.
-
-Customer invoices are classified into five aging categories:
-
-Aging Bucket| Description
-Current| Not overdue
-1–30 Days| 1 to 30 days overdue
-31–60 Days| 31 to 60 days overdue
-61–90 Days| 61 to 90 days overdue
-90+ Days| More than 90 days overdue
-
-The Aging Analysis helps management identify overdue receivables and prioritize collection follow-up.
-
-
-💰 Collection Analysis
-
-Customer collection performance is monitored using:
-
-Collection Rate % = Customer Collections ÷ Total Sales Invoices × 100
-
-For the project data:
-
-- Customer Collections = 64,000
-- Total Sales Invoices = 168,000
-- Collection Rate = 38.10%
-
-This KPI provides an indication of customer collection performance during the reporting period.
-
-
-💳 Supplier Payment Analysis
-
-Supplier payment performance is monitored using:
-
-Payment Rate % = Supplier Payments ÷ Total Purchase Invoices × 100
-
-For the project data:
-
-- Supplier Payments = 73,000
-- Outstanding Payables = 104,000
-- Payment Rate = 41.24%
-
-This analysis helps monitor supplier payment activity and outstanding obligations.
-
-
-⚠️ Customer & Supplier Risk Analysis
-
-The project includes risk classification for both customers and suppliers.
-
-Customer Risk
-
-Customers are classified into:
-
-- 🟢 Low Risk Customers
-- 🟡 Medium Risk Customers
-- 🔴 High Risk Customers
-
-Supplier Risk
-
-Suppliers are classified into:
-
-- 🟢 Low Risk Suppliers
-- 🟡 Medium Risk Suppliers
-- 🔴 High Risk Suppliers
-
-For suppliers, the project identifies:
-
-- High Risk Suppliers = 1
-- Medium Risk Suppliers = 1
-- Low Risk Suppliers = 3
-
-The risk analysis helps management identify entities that may require closer monitoring and follow-up.
-
----
-
-📊 Dashboard Analysis
-
-The Power BI project contains interactive analysis covering:
-
-Customer Analysis
-
-- Customer Outstanding Analysis.
-- Customer Collections.
-- Collection Rate.
-- Customer Risk Analysis.
-
-Supplier Analysis
-
-- Supplier Outstanding Analysis.
-- Supplier Payments.
-- Payment Rate.
-- Supplier Risk Analysis.
-
-Aging Analysis
-
-- Current.
-- 1–30 Days.
-- 31–60 Days.
-- 61–90 Days.
-- 90+ Days.
-
-Trend Analysis
-
-- Sales vs Purchase Trend Analysis.
-- Monthly financial activity.
-
-Executive Analysis
-
-- Executive Financial Dashboard.
-- Key financial KPIs.
-- Management-level financial insights.
-
-
-📈 Key Project KPIs
-
-The project includes important KPIs such as:
-
-KPI| Project Result
-Outstanding Receivables| 104,000
-Outstanding Payables| 104,000
-Customer Collections| 64,000
-Supplier Payments| 73,000
-Collection Rate| 38.10%
-Payment Rate| 41.24%
-Total Suppliers| 5
-
-These KPIs provide a quick overview of receivables, payables, collections, payments, and supplier risk.
-
-
-🔍 Key Insights
-
-The dashboard provides management with the ability to:
-
-- Monitor outstanding customer balances.
-- Monitor outstanding supplier balances.
-- Identify overdue receivables.
-- Analyze customer collection performance.
-- Analyze supplier payment performance.
-- Identify higher-risk customers and suppliers.
-- Compare sales and purchase activity.
-- Support follow-up and working-capital decisions.
-- Convert accounting transaction data into actionable business insights.
-
-
-🛠️ Tools & Technologies
-
-Accounting & Financial Analysis
-
-- Accounts Receivable (AR)
-- Accounts Payable (AP)
-- Aging Analysis
-- Collections Analysis
-- Payments Analysis
-- Outstanding Balance Analysis
-- Customer Risk Analysis
-- Supplier Risk Analysis
-- Financial Analysis
-
-Data Analysis & Business Intelligence
-
-- Microsoft Power BI
-- DAX
-- Power Query
-- Microsoft Excel
-- Data Cleaning
-- Data Transformation
-- Data Modeling
-- KPI Development
-- Dashboard Development
-- Business Intelligence
-
-AI
-
-- AI-Assisted Data Analysis
-- ChatGPT
-- AI Tools for Accounting & Financial Analysis
+- Outstanding payables.
+- Payment rate analysis.
+- Supplier aging analysis.
+- Top supplier outstanding exposure.
+- Payment trend analysis.
+- Supplier risk classification.
+- Management payment actions.
+- Supplier overpayment detection.
+- AP reconciliation validation.
+
+Risk Analysis
+
+Customer and supplier obligations are classified into:
+
+- Low Risk
+- Medium Risk
+- High Risk
+- Critical Risk
+
+Risk analysis considers outstanding exposure, aging, payment status, and management priority.
 
 
 🖼️ Dashboard Screenshots
 
-Accounts Receivable Dashboard
+1. Accounts Receivable Dashboard
+
+The AR dashboard provides an overview of customer receivables, collections, outstanding balances, aging, and collection trends.
+
+"Accounts Receivable Dashboard" (screenshots/01.Account_Receivable_Dashboard.jpg)
+
+KPI Cards
+
+- Total Sales Invoices
+- Total Customers Collections
+- Outstanding Receivables
+- Collection Rate %
+
+Charts
+
+- Aging Analysis Chart
+- Top Customers Outstanding
+- Collection Trend Analysis
 
 ![1.Accounts Receivable Dashboard](1.Accounts_Receivable_Dashboard.jpg)
 
+2. Accounts Payable Dashboard
 
-Accounts Payable Dashboard
+The AP dashboard provides an overview of purchase invoices, supplier payments, outstanding payables, supplier aging, and payment trends.
+
+"Accounts Payable Dashboard" (screenshots/02.Account_Payable_Dashboard.jpg)
+
+KPI Cards
+
+- Total Purchase Invoices
+- Total Supplier Payment
+- Outstanding Payables
+- Payment Rate %
+
+Charts
+
+- Supplier Aging Analysis Chart
+- Top Suppliers Outstanding Chart
+- Payment Trend Analysis
 
 ![2.Accounts Payable Dashboard](2.Accounts_Payable_Dashboard.jpg)
 
+3. Executive Dashboard
 
-Customer Risk Analysis
+The Executive Dashboard provides management-level visibility across receivables, payables, collection performance, payment performance, risk, aging, and outstanding exposures.
+
+"Executive Dashboard" (screenshots/03.Executive_Dashboard.jpg)
+
+KPI Cards
+
+- Total Sales Invoices
+- Total Purchase Invoices
+- Outstanding Receivables
+- Outstanding Payables
+- Collection Rate %
+
+Charts
+
+- Receivables vs Payables
+- Collection vs Payment Performance — Collection Rate % and Payment Rate %
+- Customer & Supplier Risk Overview
+- Outstanding Receivables by Aging
+- Customer Outstanding
+- Supplier Outstanding
+- Collection vs Payment Performance — Customer Collection and Supplier Payment
 
 ![3.Customer Risk Analysis](3.Customer_Risk_Analysis.jpg)
 
+4. Customer Risk Analysis
 
-Supplier Risk Analysis
+The Customer Risk Analysis dashboard focuses on customer exposure and risk classification.
+
+"Customer Risk Analysis" (screenshots/04.Customer_Risk_Analysis.jpg)
+
+KPI Cards
+
+- Total Customers
+- Total Customer Outstanding
+- Medium Risk Customers
+- High Risk Customers
+
+Charts
+
+- Customer Risk by Outstanding
+- Customer Risk by Customer
 
 ![4.Supplier Risk Analysis](4.Supplier_Risk_Analysis.jpg)
 
+5. Supplier Risk Analysis
 
-Executive Financial Dashboard
+The Supplier Risk Analysis dashboard focuses on supplier exposure, payments, payment performance, and supplier risk.
 
-![5.Executive Financial Dashboard](5.Executive_Dashboard.jpg)
+"Supplier Risk Analysis" (screenshots/05.Supplier_Risk_Analysis.jpg)
 
+KPI Cards
 
+- Total Suppliers
+- Outstanding Payables
+- Total Supplier Payments
+- Payment Rate %
+
+Charts
+
+- Supplier Outstanding Analysis
+- Top Suppliers Outstanding
+- Supplier Payment Risk / Analysis
 
 📄 Project Documentation
 
@@ -380,64 +198,354 @@ The video will demonstrate:
 - Executive Dashboard.
 - Power BI Mobile Layout 📱.
 
-Video: Coming Soon
+
+Executive AP Management KPIs
+
+The final AP Executive Dashboard validation produced the following key management indicators:
+
+KPI| Value
+Total Purchase Exposure| 693,000.00
+Outstanding Payables| 426,000.00
+Payment Coverage| 39.44%
+Overdue Payables| 163,000.00
+Overdue Payables %| 23.52%
+High + Critical Risk Exposure| 28,000.00
+Highest Supplier Exposure| 90,000.00
+Total Supplier Overpayments| 6,325.00
+
+![5.Executive Financial Dashboard](5.Executive_Dashboard.jpg)
+
+AR Validation Results
+
+AR Metric| Value
+Total AR Exposure| 173,000.00
+Overdue AR Exposure| 98,000.00
+High + Critical Risk Exposure| 30,000.00
+Highest Customer Exposure| 75,000.00
+
+
+AP Aging Analysis
+
+Aging Bucket| Aging Amount
+Current| 530,000.00
+1–30 Days| 135,000.00
+31–60 Days| 28,000.00
+61–90 Days| 0.00
+90+ Days| 0.00
+
+Total AP Exposure
+
+693,000.00
+
+Overdue AP Exposure
+
+163,000.00
+
+Overdue AP Percentage
+
+23.52%
+
+
+AP Risk Exposure
+
+Risk Level| Exposure Amount| Exposure %
+Low Risk| 328,000.00| 77.00%
+Medium Risk| 70,000.00| 16.43%
+High Risk| 28,000.00| 6.57%
+Critical Risk| 0.00| 0.00%
+
+High + Critical Risk Exposure
+
+28,000.00
+
+
+Supplier Concentration Risk
+
+The highest outstanding supplier exposure was identified as:
+
+Horizon Equipment Trading — 90,000.00
+
+Supplier concentration:
+
+21.13% of outstanding AP
+
+This indicates a significant supplier concentration risk and highlights the importance of monitoring large supplier obligations and maintaining adequate liquidity planning.
+
+
+AP Management Action Exposure
+
+Management Action| Exposure Amount| Exposure %
+Monitor| 328,000.00| 77.00%
+Payment Planning| 70,000.00| 16.43%
+Priority Payment| 28,000.00| 6.57%
+No Action| 0.00| 0.00%
+
+Management Decision Framework
+
+Priority Payment
+
+High-risk supplier obligations requiring immediate payment planning and treasury attention.
+
+Payment Planning
+
+Medium-risk obligations requiring structured payment scheduling.
+
+Monitor
+
+Significant current unpaid balances requiring monitoring to protect future liquidity.
+
+No Action
+
+Invoices with no current outstanding exposure requiring management intervention.
+
+
+Supplier Overpayment Analysis
+
+The payment reconciliation analysis identified:
+
+- 5 overpaid invoices
+- 6,325.00 total overpaid amount
+
+Identified overpayments should be investigated and reconciled against supplier statements and supporting payment documentation.
+
+
+Management Insights
+
+The project identified several important management insights:
+
+- Outstanding AP represents a significant portion of total purchase exposure.
+- Overdue supplier balances require structured payment planning.
+- High-risk supplier exposure requires priority attention.
+- Horizon Equipment Trading has the highest outstanding supplier exposure at 90,000.00.
+- Supplier concentration exceeds 20% of outstanding AP.
+- Supplier payment reconciliation identified overpayments requiring investigation.
+- Large current unpaid balances should be monitored to protect future cash liquidity.
+
+
+Recommended Management Actions
+
+- Prioritize overdue supplier balances according to risk and aging.
+- Establish structured payment plans for medium-risk supplier obligations.
+- Monitor large current unpaid balances to protect future liquidity.
+- Review supplier concentration risk.
+- Investigate all identified supplier overpayments.
+- Reconcile supplier payments against supplier statements.
+- Use aging and risk classifications to support treasury and payment planning.
+
+
+Data Structure
+
+The project uses accounting and operational datasets covering:
+
+- Customers Master Data
+- Suppliers Master Data
+- Sales Transactions
+- Purchase Transactions
+- Customer Receipts
+- Supplier Payments
+- Chart of Accounts
+- Calendar Table
+
+
+Data & Analytical Methodology
+
+The analytical workflow includes:
+
+1. Data preparation.
+2. Data cleaning and validation.
+3. Data transformation.
+4. Customer and supplier master data preparation.
+5. Receivables calculations.
+6. Payables calculations.
+7. Aging classification.
+8. Risk classification.
+9. Customer exposure analysis.
+10. Supplier exposure analysis.
+11. Collection and payment performance analysis.
+12. Overpayment detection.
+13. Management action classification.
+14. Executive KPI preparation.
+15. Power BI dashboard development.
+16. Final accounting reconciliation and validation.
+
+
+Accounting Reconciliation
+
+A final AP reconciliation check was performed to validate the relationship between purchases, supplier payments, overpayments, and outstanding payables.
+
+Reconciliation Formula
+
+Purchase Exposure − Supplier Payments + Overpayments = Actual Outstanding Payables
+
+Using the final validated figures:
+
+693,000 − 273,325 + 6,325 = 426,000
+
+Reconciliation Difference
+
+0.00
+
+Result
+
+AP Reconciliation Check: PASSED
+
+This confirms that the calculated outstanding AP is consistent with the purchase exposure, supplier payments, and identified overpayments.
+
+
+🛠️ Tools & Technologies
+
+- Microsoft Excel
+- Power Query
+- Power BI
+- DAX
+- Python
+- Pandas
+- Kaggle
+- AI-assisted Data Analysis
 
 
 📁 Project Files
 
-The repository contains the following project resources:
+Power BI
 
-Project/
-    Account_Receivable_Payable_Analytic_Dashboard.pbix
+"Account_Receivable_Payable_Analysis_Dashboard.pbix"
 
-Screenshots/
-    Accounts_Receivable_Dashboard.jpg
-    Accounts_Payable_Dashboard.jpg
-    Customer_Risk_Analysis.jpg
-    Supplier_Risk_Analysis.png
-    Executive_Dashboard.jpg
+Contains the main AR/AP analytical dashboards:
 
-PDF/
-    Account_Receivable_Payable_Analytic_Dashboard.pdf
+- Executive Dashboard
+- Accounts Receivable Dashboard
+- Accounts Payable Dashboard
+- Customer Risk Analysis
+- Supplier Risk Analysis
 
-Video/
-    Account_Receivable_Payable_Analytic_Dashboard.mp4
+Excel Dataset
 
+"AR_AP_Anslytic_Dashboard.xlsx"
 
+Contains the source accounting and operational data used for the analysis.
 
-🎓 Project Skills Demonstrated
+Python Notebook
 
-This project demonstrates practical experience in:
+"AR-AP-Analytics-Dashboard-Final-Validation-07-40.ipynb"
 
-- Accounting Data Analysis.
-- Accounts Receivable Analytics.
-- Accounts Payable Analytics.
-- Financial Data Analysis.
-- Data Cleaning.
-- Data Transformation.
-- Data Modeling.
-- DAX Measure Development.
-- Power Query.
-- Power BI Dashboard Development.
-- KPI Development.
-- Aging Analysis.
-- Risk Analysis.
-- Business Intelligence.
-- Management Reporting.
-
-
-
-👤 Project Profile
-
-Role: Accounting & Data Analytics Project
-
-Focus:
-Accounting | Financial Analysis | Business Intelligence | Power BI | Data Analytics
-
-Tools:
-Microsoft Excel | Power Query | Power BI | DAX | AI-Assisted Analysis
+Contains the final Python-based analysis, validation, management insights, and reconciliation checks.
 
 ---
+
+Project Structure
+
+AR_AP_Analytics_Dashboard/
+│
+├── README.md
+│
+├── python/
+│   └── AR-AP-Analytics-Dashboard-Final-Validation-07-40.ipynb
+│
+├── data/
+│   └── AR_AP_Anslytic_Dashboard.xlsx
+│   └── Account_Receivable_Payable_Analytic_Dashboard.pdf
+│   └── Account_Receivable_Payable_Analytic_Dashboard.mp4
+│
+├── powerbi/
+│   └── Account_Receivable_Payable_Analysis_Dashboard.pbix
+│
+└── screenshots/
+    ├── 01.Account_Receivable_Dashboard.jpg
+    ├── 02.Account_Payable_Dashboard.jpg
+    ├── 03.Executive_Dashboard.jpg
+    ├── 04.Customer_Risk_Analysis.jpg
+    └── 05.Supplier_Risk_Analysis.jpg
+
+
+Portfolio Value
+
+This project demonstrates the ability to transform accounting data into practical financial and management analytics.
+
+The complete workflow connects:
+
+Accounting Data
+
+↓
+
+Excel & Power Query
+
+↓
+
+Python / Pandas Analysis
+
+↓
+
+AR & AP Calculations
+
+↓
+
+Aging & Risk Analysis
+
+↓
+
+Customer & Supplier Exposure
+
+↓
+
+Management Decision Support
+
+↓
+
+Power BI Dashboards
+
+↓
+
+Executive Financial Insights
+
+This makes the project suitable as a portfolio example for roles involving:
+
+- Senior Accounting
+- Financial Analysis
+- Accounts Receivable
+- Accounts Payable
+- Accounting Data Analysis
+- Business Intelligence
+- Power BI
+- Financial Reporting
+
+
+Final Project Status
+
+Component| Status
+AR Analytics| ✅ Completed
+AP Analytics| ✅ Completed
+Customer Risk Analysis| ✅ Completed
+Supplier Risk Analysis| ✅ Completed
+Management Decision Support| ✅ Completed
+Executive Dashboard| ✅ Completed
+Executive KPI Cards| ✅ Completed
+Aging Analysis| ✅ Completed
+Risk Exposure Analysis| ✅ Completed
+Supplier Exposure Analysis| ✅ Completed
+Overpayment Analysis| ✅ Completed
+Management Insights| ✅ Completed
+Management Recommendations| ✅ Completed
+AP Reconciliation| ✅ Passed
+Final Validation| ✅ Completed
+
+
+Author
+
+Mostafa Hisham Abdelghani Abuhasswa
+
+Senior Accountant / Data Analyst
+
+Areas of Expertise
+
+- Accounting & Financial Analysis
+- Accounts Receivable & Accounts Payable
+- Excel Financial Reporting
+- Power BI
+- Python for Accounting & Data Analysis
+- SQL
+- Power Query
+- Data Analytics
+- AI-assisted Financial Analysis
 
 📌 Disclaimer
 
