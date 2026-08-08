@@ -443,11 +443,10 @@ AR_AP_Analytics_Dashboard/
 │
 ├── data/
 │   └── AR_AP_Anslytic_Dashboard.xlsx
-│   └── Account_Receivable_Payable_Analytic_Dashboard.pdf
-│   └── Account_Receivable_Payable_Analytic_Dashboard.mp4
-│
+│   
 ├── powerbi/
-│   └── Account_Receivable_Payable_Analysis_Dashboard.pbix
+│   └── Account_Receivable_Payable_Analytics_Dashboard.pbix
+│   └── Account_Receivable_Payable_Analytics_Dashboard.pdf
 │
 └── screenshots/
     ├── 01.Account_Receivable_Dashboard.jpg
@@ -455,6 +454,8 @@ AR_AP_Analytics_Dashboard/
     ├── 03.Executive_Dashboard.jpg
     ├── 04.Customer_Risk_Analysis.jpg
     └── 05.Supplier_Risk_Analysis.jpg
+└── Video/    
+    └── Account_Receivable_Payable_Analytic_Dashboard.mp4
 
 
 Portfolio Value
