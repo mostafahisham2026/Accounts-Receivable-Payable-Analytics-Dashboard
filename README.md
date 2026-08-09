@@ -87,7 +87,8 @@ Charts
 - Top Customers Outstanding
 - Collection Trend Analysis
 
-![1.Accounts Receivable Dashboard](1.Accounts_Receivable_Dashboard.jpg)
+
+![01.Accounts Receivable Dashboard](01.Accounts_Receivable_Dashboard.jpg)
 
 2. Accounts Payable Dashboard
 
@@ -108,7 +109,7 @@ Charts
 - Top Suppliers Outstanding Chart
 - Payment Trend Analysis
 
-![2.Accounts Payable Dashboard](2.Accounts_Payable_Dashboard.jpg)
+![02.Accounts Payable Dashboard](02.Accounts_Payable_Dashboard.jpg)
 
 3. Executive Dashboard
 
@@ -134,7 +135,7 @@ Charts
 - Supplier Outstanding
 - Collection vs Payment Performance — Customer Collection and Supplier Payment
 
-![3.Executive Dashboard](3.Executive_Dashboard.jpg)
+![03.Executive Dashboard](03.Executive_Dashboard.jpg)
 
 4. Customer Risk Analysis
 
@@ -154,7 +155,7 @@ Charts
 - Customer Risk by Outstanding
 - Customer Risk by Customer
 
-![4.Customer Risk Analysis](4.Customer_Risk_Analysis.jpg)
+![04.Customer Risk Analysis](04.Customer_Risk_Analysis.jpg)
 
 5. Supplier Risk Analysis
 
@@ -175,7 +176,7 @@ Charts
 - Top Suppliers Outstanding
 - Supplier Payment Risk / Analysis
 
-![5.Supplier Risk Analysis](5.Supplier_Risk_Analysis.jpg)
+![05.Supplier Risk Analysis](05.Supplier_Risk_Analysis.jpg)
 
 📄 Project Documentation
 
