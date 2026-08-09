@@ -216,8 +216,6 @@ High + Critical Risk Exposure| 28,000.00
 Highest Supplier Exposure| 90,000.00
 Total Supplier Overpayments| 6,325.00
 
-![5.Executive Financial Dashboard](5.Executive_Dashboard.jpg)
-
 AR Validation Results
 
 AR Metric| Value
